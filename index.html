@@ -6,6 +6,14 @@
     <title>Temario Probabilidad y Estadística</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        .btn-top {
+        display: inline-block;
+        background-color: #c85a54;
+        color: #333;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 4px;
+    }
         body {
             font-family: Georgia, serif;;
             background-color: #FEF5E7  ;
@@ -59,12 +67,72 @@
             margin: 10px auto;
             max-width: 100%;
         }
+         /* Estilos para el menú principal */
+         .menu {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            padding: 8px 20px;
+            margin: 0 10px;
+            background-color: #c85a54;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .menu a:hover {
+            background-color: #900C3F;
+            color: white;
+        }
+
+        /* Estilos para el botón de regresar */
+        .back-to-top {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .back-to-top a {
+            text-decoration: none;
+            color: #333;
+            padding: 8px 20px;
+            margin: 0 10px;
+            background-color: #c85a54;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .back-to-top a:hover {
+            background-color: #900C3F;
+            color: white;
+        }
+        video {
+        max-width: 100%; /* Ajusta el ancho máximo del video */
+        height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+        display: block; /* Asegura que el video sea un bloque en la página */
+        margin: 0 auto; /* Centra el video horizontalmente */
+    }
     </style>
 </head>
 
 <body>
     <h1>Temario Probabilidad y Estadistica</h1>
-    <h2>Tema 1. Estadistica descriptiva</h2>
+    <div class="menu">
+        <section id="menu">
+        </section>
+        <a href="#menu"></a>
+        <a href="#Tema 1. Estadistica descriptiva">Tema 1</a>
+        <a href="#Tema 2. Fundamentos de la Teoría de Probabilidad">Tema 2</a>
+        <a href="#Tema 3. Variables Aleatorias">Tema 3</a>
+        <a href="#Tema 4. Distribuciones de Probabilidad.">Tema 4</a>
+        <a href="#Tema 5. Regresión lineal.">Tema 5</a>
+    </div>
+    <section id="Tema 1. Estadistica descriptiva"> 
+        <h2>Tema 1. Estadistica descriptiva</h2>
+    </section>
+    
     <h3>Subtemas</h1>
     <ul>
         <li>1.1 Conceptos básicos de estadistica</li>
@@ -178,7 +246,9 @@
             para seleccionar una muestra representativa de una población más grande. </p>
             <li>Ejercicios de funciones del tema 1:</li>
             <iframe src="https://nbviewer.org/github/Dani-Ald/TeamTernurines/blob/f9183343807db21584b441fa3500d7090e043a1c/ELCHIDO.ipynb" width="100%" height="600px"></iframe>
-        <h2>Tema 2. Fundamentos de la Teoría de Probabilidad</h2>
+             <section id="Tema 2. Fundamentos de la Teoría de Probabilidad"> 
+                <h2>Tema 2. Fundamentos de la Teoría de Probabilidad</h2>
+            </section>
         <h3>Subtemas</h1>
         <li>2.1 Técnicas de Conteo</li>
         <ul>Se refiere a los metodos o formulas que nos ayuda a determinar el 
@@ -216,8 +286,10 @@
              una distribución de probabilidades.</p>
              <li>Ejercicios de tecnicas de conteo: </li>
              <iframe src="https://nbviewer.org/github/imac17itsoeh/Tecnicas-Conteo-Equipo3/blob/72e3fe089c0fde41afe7f1ae433e3547326489e4/EjerciciosTecnicasDeConteo.ipynb" width="100%" height="600px"></iframe>
-
-        <h2>Tema 3. Variables Aleatorias.</h2>
+             <section id="Tema 3. Variables Aleatorias"> 
+                <h2>Tema 3. Variables Aleatorias</h2>
+            </section>
+    
         <h3>Subtemas</h3>
         <li>3.1 Variables aleatorias discretas</li>
         <ul>
@@ -256,9 +328,18 @@
         <p>El cálculo de probabilidades es el estudio de cómo se determina la posibilidad de ocurrencia de un suceso.</p>
         <li>Links de videos del Tema 3</li>
         <p><a href="https://drive.google.com/file/d/1CSIGe71aDSWF0vUM22ML1zNJFquDJvj4/view?usp=drive_link">1. Link video </a></p>
+        <video controls>
+            <source src="Video_Tema3_PE.mp4" type="video/mp4">
+        </video>
         <p><a href="https://drive.google.com/file/d/1FWU8GFY4Cy3dakT5OD71ZDscg1RM1JBg/view?usp=drive_link">2. Link video</a></p>
+        <video controls>
+            <source src="Video2_Tema3_PE.mp4" type="video/mp4">
+        </video>
             </ul>
-         <h2>Tema 4. Distribuciones de Probabilidad.</h2>   
+            <section id="Tema 4. Distribuciones de Probabilidad."> 
+                <h2>Tema 4. Distribuciones de Probabilidad.</h2>
+            </section>   
+    
          <h3>Subtemas</h3>
          <li>4.1 Función de probabilidad.</li>
          <ul>
@@ -287,12 +368,20 @@
                  <p>La distribución F es un modelo probabilístico que se utiliza principalmente en estadística para comparar varianzas o realizar pruebas de hipótesis sobre la igualdad de varianzas de dos poblaciones normales. También se emplea en análisis de
                      regresión para probar la significancia conjunta de múltiples variables explicativas.</p>  
                      <p><a href="https://drive.google.com/file/d/1Eg9VlslIF9v6CIooipL2MmQRWKIz4VvG/view?usp=drive_link">1. Link video ejercicio 12</a></p>
-         <h2>Tema 5. Regresión lineal.</h2>  
+                     <video controls>
+                        <source src="Video3_Ejercicio12.mp4" type="video/mp4">
+                    </video>
+            <section id="Tema 5. Regresión lineal."> 
+            <h2>Tema 5. Regresión lineal.</h2>
+                    </section>
+                   
          <h3>Subtemas</h3>
+         <a href="#menu" class="btn-top">Ir al menu</a>
          <p>La regresión y correlación son dos conceptos fundamentales en estadística y análisis de datos que se utilizan para medir y estudiar las relaciones entre variables.
         </p> 
                  
         <ul>
+            
             <li>5.1.1 Diagrama de dispersión</li>
             <p>Un diagrama de dispersión es una representación gráfica que muestra la relación entre dos variables cuantitativas. Este tipo de diagrama es fundamental
 
